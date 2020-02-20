@@ -141,7 +141,7 @@ export default {
 }
 .vis-default-input {
   width: 50px;
-  height: 44px;
+  height: 50px;
   text-align: center;
   font-size: 24px;
 }

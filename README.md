@@ -92,7 +92,7 @@ Vue.use(VueInputSpinner, {
 | :minValue         | Number           | 0                 | Minimum value                                                   |
 | :maxValue         | Number           | 10**1000          | Maximum value (default infinite)                                |
 | :step             | Number           | 1                 | Step between increase and decreases                             |
-| :inputClass       | String           | vis-default-input | width: 50px; height: 44px; text-align: center; font-size: 24px; |
+| :inputClass       | String           | vis-default-input | width: 50px; height: 50px; text-align: center; font-size: 24px; |
 | :buttonClass      | String           | vis-default-button| width: 50px; height: 50px;                                      |
 | :buttonLeftClass  | String           | ""                | This will overwrite buttonClass                                 |
 | :buttonRightClass | String           | ""                | This will overwrite buttonClass                                 |
