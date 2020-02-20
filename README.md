@@ -7,9 +7,9 @@
 
 [![NPM](https://nodei.co/npm/vue-input-spinner.png?stars&downloads)](https://nodei.co/npm/vue-input-spinner/)
 
-[![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg?style=flat-square)](https://www.npmjs.org/package/vue-input-spinner)
+[![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg)](https://www.npmjs.org/package/vue-input-spinner)
 
-[![downloads](https://img.shields.io/npm/dt/vue-select-image.svg)](https://www.npmjs.com/package/vue-select-image)
+[![downloads](https://img.shields.io/npm/dt/vue-input-spinner.svg)](https://www.npmjs.com/package/vue-input-spinner)
 
 
 ## Demo
