@@ -9,7 +9,7 @@
 
 [![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg?style=flat-square)](https://www.npmjs.org/package/vue-input-spinner)
 
-[![NPM downloads](http://img.shields.io/npm/dm/vue-input-spinner.svg?style=flat-square)](https://npmjs.org/package/vue-input-spinner)
+[![downloads](https://img.shields.io/npm/dt/vue-select-image.svg)](https://www.npmjs.com/package/vue-select-image)
 
 
 ## Demo
