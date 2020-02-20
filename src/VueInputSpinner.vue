@@ -13,7 +13,7 @@
       :max="maxValue"
       :class="inputClass"
       @input="inputValue"
-      :readonly="readOnly"
+      :readonly="readonly"
     />
     <label :class="inputClass" v-else>{{dataValue}}</label>
     <button
@@ -94,7 +94,7 @@ export default {
         return true;
       }
     },
-    readOnly: {
+    readonly: {
       type: Boolean,
       default() {
         return false;

@@ -1,5 +1,5 @@
 /*!
- * vue-input-spinner v0.1.0
+ * vue-input-spinner v0.1.1
  * (c) Kaan Gökdemir <kaangokdemir01@gmail.com> (https://kaangokdemir.com)
  * Released under the MIT License.
  */
@@ -324,8 +324,8 @@ var __vue_staticRenderFns__ = [];
 
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-3a70e1a7_0", {
-    source: ".vue-input-spinner input[data-v-3a70e1a7]::-webkit-inner-spin-button,.vue-input-spinner input[data-v-3a70e1a7]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.vis-default-input[data-v-3a70e1a7]{width:50px;height:44px;text-align:center;font-size:24px}.vis-default-button[data-v-3a70e1a7]{width:50px;height:50px}.vue-input-spinner[data-v-3a70e1a7]{display:flex;justify-content:center;height:100%;align-items:center}.vue-input-spinner label[data-v-3a70e1a7]{display:flex;justify-content:center;align-items:center;height:100%}",
+  inject("data-v-4ceef028_0", {
+    source: ".vue-input-spinner input[data-v-4ceef028]::-webkit-inner-spin-button,.vue-input-spinner input[data-v-4ceef028]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.vis-default-input[data-v-4ceef028]{width:50px;height:50px;text-align:center;font-size:24px}.vis-default-button[data-v-4ceef028]{width:50px;height:50px}.vue-input-spinner[data-v-4ceef028]{display:flex;justify-content:center;height:100%;align-items:center}.vue-input-spinner label[data-v-4ceef028]{display:flex;justify-content:center;align-items:center;height:100%}",
     map: undefined,
     media: undefined
   });
@@ -333,7 +333,7 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__ = "data-v-3a70e1a7";
+var __vue_scope_id__ = "data-v-4ceef028";
 /* module identifier */
 
 var __vue_module_identifier__ = undefined;
@@ -350,7 +350,8 @@ var __vue_component__ = normalizeComponent({
 }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, createInjector, undefined, undefined);
 
 var index = {
-  install: function install(Vue, options) {
+  install: function install(Vue) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var props = Object.assign({}, __vue_component__.props);
     Object.keys(options).forEach(function (k) {
       props[k] = {
