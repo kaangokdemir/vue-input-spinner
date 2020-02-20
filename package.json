@@ -1,0 +1,38 @@
+{
+  "private": false,
+  "name": "vue-input-spinner",
+  "version": "0.0.15",
+  "description": "A Vue.js input spinner component.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "vue serve VueInputSpinner.vue",
+    "build": "bili --name index --plugin vue --vue.css false",
+    "bili": "npx bili --bundle-node-modules"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "vue",
+    "vue.js",
+    "vue-js",
+    "input",
+    "vue-input",
+    "vue-input-spinner",
+    "input-spinner"
+  ],
+  "author": "Kaan Gökdemir <kaangokdemir01@gmail.com> (https://kaangokdemir.com)",
+  "bugs": {
+    "url": "https://github.com/kaangokdemir/vue-input-spinner/issues"
+  },
+  "homepage": "https://github.com/kaangokdemir/vue-input-spinner#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "bili": "^4.8.1",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
