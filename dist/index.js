@@ -1,5 +1,5 @@
 /*!
- * vue-input-spinner v0.0.15
+ * vue-input-spinner v0.1.2
  * (c) Kaan Gökdemir <kaangokdemir01@gmail.com> (https://kaangokdemir.com)
  * Released under the MIT License.
  */
@@ -23,9 +23,41 @@
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 var script = {
   name: "VueInputSpinner",
   props: {
+    value: {
+      type: Number,
+      "default": function _default() {
+        return 0;
+      }
+    },
+    minValue: {
+      type: Number,
+      "default": function _default() {
+        return 0;
+      }
+    },
+    maxValue: {
+      type: Number,
+      "default": function _default() {
+        return Math.pow(10, 1000);
+      }
+    },
+    step: {
+      type: Number,
+      "default": function _default() {
+        return 1;
+      }
+    },
     buttonClass: {
       type: [String, Array],
       "default": function _default() {
@@ -62,37 +94,13 @@ var script = {
         return "+";
       }
     },
-    value: {
-      type: Number,
-      "default": function _default() {
-        return 0;
-      }
-    },
-    minValue: {
-      type: Number,
-      "default": function _default() {
-        return 0;
-      }
-    },
-    maxValue: {
-      type: Number,
-      "default": function _default() {
-        return Math.pow(10, 1000);
-      }
-    },
-    step: {
-      type: Number,
-      "default": function _default() {
-        return 1;
-      }
-    },
-    inputShown: {
+    editable: {
       type: Boolean,
       "default": function _default() {
         return true;
       }
     },
-    readOnly: {
+    readonly: {
       type: Boolean,
       "default": function _default() {
         return false;
@@ -274,18 +282,21 @@ var __vue_render__ = function __vue_render__() {
     staticClass: "vue-input-spinner"
   }, [_c('button', {
     "class": _vm.buttonLeftClass || _vm.buttonClass,
+    attrs: {
+      "disabled": _vm.dataValue == _vm.minValue
+    },
     on: {
       "click": function click($event) {
         return _vm.decreaseValue();
       }
     }
-  }, [_vm._v(_vm._s(_vm.buttonLeftText))]), _vm._v(" "), _vm.inputShown ? _c('input', {
+  }, [_vm._v(_vm._s(_vm.buttonLeftText))]), _vm._v(" "), _vm.editable ? _c('input', {
     "class": _vm.inputClass,
     attrs: {
       "type": "number",
       "min": _vm.minValue,
       "max": _vm.maxValue,
-      "readonly": _vm.readOnly
+      "readonly": _vm.readonly
     },
     domProps: {
       "value": _vm.dataValue
@@ -297,6 +308,9 @@ var __vue_render__ = function __vue_render__() {
     "class": _vm.inputClass
   }, [_vm._v(_vm._s(_vm.dataValue))]), _vm._v(" "), _c('button', {
     "class": _vm.buttonRightClass || _vm.buttonClass,
+    attrs: {
+      "disabled": _vm.dataValue == _vm.maxValue
+    },
     on: {
       "click": function click($event) {
         return _vm.increaseValue();
@@ -310,8 +324,8 @@ var __vue_staticRenderFns__ = [];
 
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-1a78c33d_0", {
-    source: ".vue-input-spinner input[data-v-1a78c33d]::-webkit-inner-spin-button,.vue-input-spinner input[data-v-1a78c33d]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.vis-default-input[data-v-1a78c33d]{width:50px;height:44px;text-align:center;font-size:24px}.vis-default-button[data-v-1a78c33d]{width:50px;height:50px}.vue-input-spinner[data-v-1a78c33d]{display:flex;justify-content:center;height:100%;align-items:center}.vue-input-spinner label[data-v-1a78c33d]{display:flex;justify-content:center;align-items:center;height:100%}",
+  inject("data-v-7e632fa8_0", {
+    source: ".vue-input-spinner input[data-v-7e632fa8]::-webkit-inner-spin-button,.vue-input-spinner input[data-v-7e632fa8]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.vis-default-input[data-v-7e632fa8]{width:50px;height:50px;text-align:center;font-size:24px}.vis-default-button[data-v-7e632fa8]{width:50px;height:50px}.vue-input-spinner[data-v-7e632fa8]{display:flex;justify-content:center;height:100%;align-items:center}.vue-input-spinner label[data-v-7e632fa8]{display:flex;justify-content:center;align-items:center;height:100%}",
     map: undefined,
     media: undefined
   });
@@ -319,7 +333,7 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__ = "data-v-1a78c33d";
+var __vue_scope_id__ = "data-v-7e632fa8";
 /* module identifier */
 
 var __vue_module_identifier__ = undefined;
@@ -336,7 +350,8 @@ var __vue_component__ = normalizeComponent({
 }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, createInjector, undefined, undefined);
 
 var index = {
-  install: function install(Vue, options) {
+  install: function install(Vue) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var props = Object.assign({}, __vue_component__.props);
     Object.keys(options).forEach(function (k) {
       props[k] = {

@@ -3,18 +3,16 @@
 
 > Vue 2.x component for spinning inputs
 
-![](https://kaangokdemir.me/vue-input-spinner.png)
-
 [![NPM](https://nodei.co/npm/vue-input-spinner.png?stars&downloads)](https://nodei.co/npm/vue-input-spinner/)
 
-[![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg?style=flat-square)](https://www.npmjs.org/package/vue-input-spinner)
-
-[![NPM downloads](http://img.shields.io/npm/dm/vue-input-spinner.svg?style=flat-square)](https://npmjs.org/package/vue-input-spinner)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg)](https://www.npmjs.org/package/vue-input-spinner) [![downloads](https://img.shields.io/npm/dt/vue-input-spinner.svg)](https://www.npmjs.com/package/vue-input-spinner)
 
 
 ## Demo
 
 [https://vue-input-spinner.netlify.com/](https://vue-input-spinner.netlify.com/)
+
+![](https://kaangokdemir.me/vue-input-spinner.png)
 
 ## Installation
 
@@ -94,7 +92,7 @@ Vue.use(VueInputSpinner, {
 | :minValue         | Number           | 0                 | Minimum value                                                   |
 | :maxValue         | Number           | 10**1000          | Maximum value (default infinite)                                |
 | :step             | Number           | 1                 | Step between increase and decreases                             |
-| :inputClass       | String           | vis-default-input | width: 50px; height: 44px; text-align: center; font-size: 24px; |
+| :inputClass       | String           | vis-default-input | width: 50px; height: 50px; text-align: center; font-size: 24px; |
 | :buttonClass      | String           | vis-default-button| width: 50px; height: 50px;                                      |
 | :buttonLeftClass  | String           | ""                | This will overwrite buttonClass                                 |
 | :buttonRightClass | String           | ""                | This will overwrite buttonClass                                 |
