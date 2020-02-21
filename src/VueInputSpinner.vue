@@ -133,7 +133,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .vue-input-spinner input::-webkit-outer-spin-button,
 .vue-input-spinner input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -160,5 +160,11 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 </style>
