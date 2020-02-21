@@ -334,6 +334,7 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 
 
 var __vue_scope_id__ = undefined;
+
 /* module identifier */
 
 var __vue_module_identifier__ = undefined;
