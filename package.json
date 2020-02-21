@@ -1,11 +1,11 @@
 {
   "private": false,
   "name": "vue-input-spinner",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Vue.js input spinner component.",
   "main": "./dist/index.js",
   "scripts": {
-    "dev": "vue serve VueInputSpinner.vue",
+    "dev": "vue serve src/VueInputSpinner.vue",
     "build": "bili --name index --plugin vue --vue.css false",
     "bili": "npx bili --bundle-node-modules"
   },
