@@ -7,5 +7,8 @@ module.exports = {
     vue: {
       css: true
     }
+  },
+  babel: {
+    configFile: false
   }
 }
