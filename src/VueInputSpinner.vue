@@ -26,111 +26,111 @@
 
 <script>
 export default {
-  name: "VueInputSpinner",
+  name: 'VueInputSpinner',
   props: {
     value: {
       type: Number,
-      default() {
-        return 0;
+      default () {
+        return 0
       }
     },
     minValue: {
       type: Number,
-      default() {
-        return 0;
+      default () {
+        return 0
       }
     },
     maxValue: {
       type: Number,
-      default() {
-        return 10 ** 1000;
+      default () {
+        return 10 ** 1000
       }
     },
     step: {
       type: Number,
-      default() {
-        return 1;
+      default () {
+        return 1
       }
     },
     buttonClass: {
       type: [String, Array],
-      default() {
-        return "vis-default-button";
+      default () {
+        return 'vis-default-button'
       }
     },
     buttonLeftClass: {
       type: [String, Array],
-      default() {
-        return "";
+      default () {
+        return ''
       }
     },
     buttonRightClass: {
       type: [String, Array],
-      default() {
-        return "";
+      default () {
+        return ''
       }
     },
     inputClass: {
       type: [String, Array],
-      default() {
-        return "vis-default-input";
+      default () {
+        return 'vis-default-input'
       }
     },
     buttonLeftText: {
       type: String,
-      default() {
-        return "-";
+      default () {
+        return '-'
       }
     },
     buttonRightText: {
       type: String,
-      default() {
-        return "+";
+      default () {
+        return '+'
       }
     },
     editable: {
       type: Boolean,
-      default() {
-        return true;
+      default () {
+        return true
       }
     },
     readonly: {
       type: Boolean,
-      default() {
-        return false;
+      default () {
+        return false
       }
     }
   },
-  data() {
+  data () {
     return {
       dataValue: this.value // For avoid mutating a prop directly
-    };
+    }
   },
   watch: {
-    dataValue(newValue, oldValue) {
-      this.$emit("input", newValue, oldValue);
+    dataValue (newValue, oldValue) {
+      this.$emit('input', newValue, oldValue)
     }
   },
   methods: {
-    inputValue(event) {
-      if (event.target.value) this.dataValue = parseFloat(event.target.value);
+    inputValue (event) {
+      if (event.target.value) this.dataValue = parseFloat(event.target.value)
     },
-    decreaseValue() {
+    decreaseValue () {
       if (this.dataValue - this.step >= this.minValue) {
-        this.dataValue -= this.step;
+        this.dataValue -= this.step
       } else {
-        this.dataValue = this.minValue;
+        this.dataValue = this.minValue
       }
     },
-    increaseValue() {
+    increaseValue () {
       if (this.dataValue + this.step <= this.maxValue) {
-        this.dataValue += this.step;
+        this.dataValue += this.step
       } else {
-        this.dataValue = this.maxValue;
+        this.dataValue = this.maxValue
       }
     }
   }
-};
+}
 </script>
 
 <style>
