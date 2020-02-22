@@ -5,8 +5,7 @@
 
 [![NPM](https://nodei.co/npm/vue-input-spinner.png?stars&downloads)](https://nodei.co/npm/vue-input-spinner/)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg)](https://www.npmjs.org/package/vue-input-spinner) [![downloads](https://img.shields.io/npm/dt/vue-input-spinner.svg)](https://www.npmjs.com/package/vue-input-spinner)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm package](https://img.shields.io/npm/v/vue-input-spinner.svg)](https://www.npmjs.org/package/vue-input-spinner) [![downloads](https://img.shields.io/npm/dt/vue-input-spinner.svg)](https://www.npmjs.com/package/vue-input-spinner) [![size](https://img.shields.io/bundlephobia/minzip/vue-input-spinner)](https://www.npmjs.com/package/vue-input-spinner)
 
 ## Demo
 
