@@ -25,6 +25,7 @@
 </template>
 
 <script>
+/* eslint no-debugger: "error" */
 export default {
   name: 'VueInputSpinner',
   props: {
